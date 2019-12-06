@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google.">
+    <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template, eCommerce dashboard, analytic dashboard">
+    <meta name="author" content="ThemeSelect">
+    <title>ECube | Employee Management</title>
+    <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon-152x152.png">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon/gp.jpg">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- BEGIN: VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="vendors/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/animate-css/animate.css">
+    <link rel="stylesheet" type="text/css" href="fonts/fontawesome/css/all.min.css">
+    <!-- END: VENDOR CSS-->
+    <!-- BEGIN: Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="css/themes/horizontal-menu-template/materialize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/layouts/style-horizontal.css">
+    <!-- END: Page Level CSS-->
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="css/custom/custom.css">
+    <!-- END: Custom CSS-->
+</head>
+<!-- END: Head-->
+
+<body class="horizontal-layout page-header-light horizontal-menu 2-columns  " data-open="click" data-menu="horizontal-menu" data-col="2-columns">
+    <!-- BEGIN: Header-->
+    <header class="page-topbar" id="header">
+        <div class="navbar navbar-fixed">
+            <nav class="navbar-main navbar-color nav-collapsible sideNav-lock navbar-dark gradient-45deg-light-blue-cyan">
+                <div class="nav-wrapper">
+                    <ul class="left">
+                        <li>
+                            <h1 class="logo-wrapper"><a class="brand-logo darken-1" href="index.html"><img src="images/logo/materialize-logo.png" alt="materialize logo"><span class="logo-text hide-on-med-and-down">ECube</span></a></h1>
+                        </li>
+                    </ul>
+                    <!-- <div class="header-search-wrapper hide-on-med-and-down"><i class="material-icons">search</i>
+                        <input class="header-search-input z-depth-2" type="text" name="Search" placeholder="Search Employee...">
+                    </div> -->
+                    <ul class="navbar-list right">
+                        <!-- <li class="hide-on-med-and-down"><a class="waves-effect waves-block waves-light translation-button" href="javascript:void(0);" data-target="translation-dropdown"><span class="flag-icon flag-icon-gb"></span></a></li> -->
+                        <li class="hide-on-med-and-down"><a class="waves-effect waves-block waves-light toggle-fullscreen" href="javascript:void(0);"><i class="material-icons">settings_overscan</i></a></li>
+                        <li class="hide-on-large-only"><a class="waves-effect waves-block waves-light search-button" href="javascript:void(0);"><i class="material-icons">search </i></a></li>
+                        <li><a class="waves-effect waves-block waves-light notification-button" href="javascript:void(0);" data-target="notifications-dropdown"><i class="material-icons">notifications_none<small class="notification-badge orange accent-3">5</small></i></a></li>
+                        <li><a class="waves-effect waves-block waves-light profile-button" href="javascript:void(0);" data-target="profile-dropdown"><span class="avatar-status avatar-online"><img src="images/avatar/avatar-7.png" alt="avatar"><i></i></span></a></li>
+                        <li><a class="waves-effect waves-block waves-light sidenav-trigger" href="#" data-target="slide-out-right"><i class="material-icons">format_indent_increase</i></a></li>
+                    </ul>
+                    <!-- translation-button-->
+                    <!-- <ul class="dropdown-content" id="translation-dropdown">
+                        <li><a class="grey-text text-darken-1" href="#!"><i class="flag-icon flag-icon-gb"></i> English</a></li>
+                        <li><a class="grey-text text-darken-1" href="#!"><i class="flag-icon flag-icon-fr"></i> French</a></li>
+                        <li><a class="grey-text text-darken-1" href="#!"><i class="flag-icon flag-icon-cn"></i> Chinese</a></li>
+                        <li><a class="grey-text text-darken-1" href="#!"><i class="flag-icon flag-icon-de"></i> German</a></li>
+                    </ul> -->
+                    <!-- notifications-dropdown-->
+                    <ul class="dropdown-content" id="notifications-dropdown">
+                        <li>
+                            <h6>NOTIFICATIONS<span class="new badge">5</span></h6>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a class="grey-text text-darken-2" href="#!"><span class="material-icons icon-bg-circle cyan small">add_shopping_cart</span> A new order has been placed!</a>
+                            <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">2 hours ago</time>
+                        </li>
+                        <li><a class="grey-text text-darken-2" href="#!"><span class="material-icons icon-bg-circle red small">stars</span> Completed the task</a>
+                            <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">3 days ago</time>
+                        </li>
+                        <li><a class="grey-text text-darken-2" href="#!"><span class="material-icons icon-bg-circle teal small">settings</span> Settings updated</a>
+                            <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">4 days ago</time>
+                        </li>
+                        <li><a class="grey-text text-darken-2" href="#!"><span class="material-icons icon-bg-circle deep-orange small">today</span> Director meeting started</a>
+                            <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">6 days ago</time>
+                        </li>
+                        <li><a class="grey-text text-darken-2" href="#!"><span class="material-icons icon-bg-circle amber small">trending_up</span> Generate monthly report</a>
+                            <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">1 week ago</time>
+                        </li>
+                    </ul>
+                    <!-- profile-dropdown-->
+                    <ul class="dropdown-content" id="profile-dropdown">
+                        <li><a class="grey-text text-darken-1" href="user-profile-page.html"><i class="material-icons">person_outline</i> Profile</a></li>
+                        <li><a class="grey-text text-darken-1" href="app-chat.html"><i class="material-icons">chat_bubble_outline</i> Chat</a></li>
+                        <li><a class="grey-text text-darken-1" href="page-faq.html"><i class="material-icons">help_outline</i> Help</a></li>
+                        <li class="divider"></li>
+                        <li><a class="grey-text text-darken-1" href="user-lock-screen.html"><i class="material-icons">lock_outline</i> Lock</a></li>
+                        <li><a class="grey-text text-darken-1" href="user-login.html"><i class="material-icons">keyboard_tab</i> Logout</a></li>
+                    </ul>
+                </div>
+                
+                <nav class="display-none search-sm">
+                    <div class="nav-wrapper">
+                        <form>
+                            <div class="input-field">
+                                <input class="search-box-sm" type="search" required="">
+                                <label class="label-icon" for="search"><i class="material-icons search-sm-icon">search</i></label><i class="material-icons search-sm-close">close</i>
+                            </div>
+                        </form>
+                    </div>
+                </nav>
+            </nav>
+
+            <!-- BEGIN: Horizontal nav start-->
+            <nav class="white hide-on-med-and-down" id="horizontal-nav">
+          <div class="nav-wrapper">
+            <ul class="left hide-on-med-and-down" id="ul-horizontal-nav" data-menu="menu-navigation">
+              <li><a class="dropdown-menu1" href="index.html" data -target="DashboardDropdown"><i class="material-icons">dashboard</i><span>Dashboard</span></a>
+              </li>
+              <li><a class="dropdown-menu" href="#" data-target="TemplatesDropdown"><i class="material-icons">supervisor_account</i><span>HR Management<i class="material-icons right">keyboard_arrow_down</i></span></a>
+                <ul class="dropdown-content dropdown-horizontal-list" id="TemplatesDropdown">  
+                    <li data-menu=""><a href="employee-management.html">Employee Management</a>
+                  </li>
+                  <li data-menu=""><a href="#">Task Management</a>
+                  </li>
+                  <li data-menu=""><a href="#">Holidays</a>
+                  </li>
+                  <li data-menu=""><a href="#">Attendance</a>
+                  </li>
+                  <li data-menu=""><a href="#">Leaves</a>
+                  </li>
+                  <li data-menu=""><a href="#">Payslips</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a class="dropdown-menu" href="#" data-target="AppsDropdown"><i class="material-icons">help</i><span>Help<i class="material-icons right">keyboard_arrow_down</i></span></a>
+                <ul class="dropdown-content dropdown-horizontal-list" id="AppsDropdown">       
+                  
+                </ul>
+              </li>
+              <li><a class="dropdown-menu" href="#" data-target="PageDropdown"><i class="material-icons">contact_mail</i><span>Email and SMS<i class="material-icons right">keyboard_arrow_down</i></span></a>
+                <ul class="dropdown-content dropdown-horizontal-list" id="PageDropdown">       
+                  
+                </ul>
+              </li>
+              
+            </ul>
+          </div>
+          <!-- END: Horizontal nav start-->
+        </nav>
+      </div>
+    </header>
+    <!-- END: Header-->
+    <!-- BEGIN: Page Main-->
+    <div id="main">
+        <div class="row">
+            <div class="pb-0" id="breadcrumbs-wrapper">
+                <!-- Search for small screen-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12 m6 l6">
+                            <h5 class="breadcrumbs-title">Manage Employees</h5>
+                        </div>
+                        <div class="col s12 m6 l6 right-align-md" style="">
+                            <ol class="breadcrumbs mb-0">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a>
+                                </li>
+                                <li class="breadcrumb-item active">Employee Management
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="container">
+                    <!--Gradient Card-->
+                    <div id="cards-extended" class="employeecard1">
+                        <div class="card1">
+                            <div class="card-content1">
+                                <div id="card-panel-type1" class="section">
+                                    <div class="row m0">
+                                        <div class="col s12 m3 l3 pr-0 pl-0 hide-on-med-and-down animate fadeLeft">
+                                            <div id="sidebar" class="card">
+                                                <div class="card-content">
+                                                   <!-- <span class="card-title">Categories</span> -->
+                                                    <div class="search-sidebar p-0 mb-10">
+                                                       <input placeholder="Search" id="first_name" type="text" class="search-box validate white search-circle valid">
+                                                    </div>
+                                                    <!-- <span class="p-0 mb-10"></span> -->
+                                                    <span class="card-title">Designation</span>
+                                                    <hr class="p-0 mb-8">
+                                                    <ul class="collapsible categories-collapsible">
+                                                        <li>
+                                                            <div class="collapsible-header" tabindex="0">Managing Director <i class="material-icons"> keyboard_arrow_right </i></div>
+                                                            <!-- <div class="collapsible-body">
+                                                                <p>Apple</p>
+                                                                <p>Fitbit</p>
+                                                                <p>Samsung</p>
+                                                                <p>Fastrack</p>
+                                                            </div> -->
+                                                        </li>
+                                                        <li>
+                                                            <div class="collapsible-header" tabindex="0">Manager <i class="material-icons"> keyboard_arrow_right </i></div>
+                                                            <!-- <div class="collapsible-body">
+                                                                <p>Apple</p>
+                                                                <p>Samsung</p>
+                                                                <p>Lenovo</p>
+                                                            </div> -->
+                                                        </li>
+                                                        <li>
+                                                            <div class="collapsible-header" tabindex="0">Admin <i class="material-icons"> keyboard_arrow_right </i></div>
+                                                            <!-- <div class="collapsible-body">
+                                                                <p>Apple</p>
+                                                                <p>Samsung</p>
+                                                                <p>Lenovo</p>
+                                                                <p>HP</p>
+                                                                <p>Dell</p>
+                                                            </div> -->
+                                                        </li>
+                                                        <li>
+                                                            <div class="collapsible-header" tabindex="0">Sales <i class="material-icons"> keyboard_arrow_right </i></div>
+                                                            <!-- <div class="collapsible-body">
+                                                                <p>Apple</p>
+                                                                <p>Samsung</p>
+                                                                <p>Lenovo</p>
+                                                                <p>Mi</p>
+                                                                <p>Nokia</p>
+                                                            </div> -->
+                                                        </li>
+                                                         <li>
+                                                            <div class="collapsible-header" tabindex="0">Operation <i class="material-icons"> keyboard_arrow_right </i></div>
+                                                         </li> 
+                                                           <li>
+                                                            <div class="collapsible-header" tabindex="0">Accountant <i class="material-icons"> keyboard_arrow_right </i></div>
+                                                         </li> 
+                                                           <li>
+                                                            <div class="collapsible-header" tabindex="0">Supervisor <i class="material-icons"> keyboard_arrow_right </i></div>
+                                                         </li> 
+                                                          <li>
+                                                            <div class="collapsible-header" tabindex="0">Designer <i class="material-icons"> keyboard_arrow_right </i></div>
+                                                         </li>   
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col s12 m9 l9 card-width">
+                                            <div class="col s12 m6 l4 card-width animated fadeInDown">
+                                                <div id="profile-card" class="card" style="overflow: hidden;">
+                                                    <div class="card-image waves-effect waves-block waves-light gradient-45deg-light-blue-cyan gradient-shadow min-height-100 white-text">
+                                                    </div>
+                                                    <div class="card-content">
+                                                        <img src="images/avatar/avatar-1.png" alt="" class="circle responsive-img activator card-profile-image cyan lighten-1 padding-2">
+                                                        <a class="btn-floating activator btn-move-up waves-effect waves-light red accent-2 z-depth-4 right">
+                                                            <i class="material-icons">edit</i>
+                                                        </a>
+                                                        <h5 class="mt-4 card-title activator grey-text text-darken-4">Arjun</h5>
+                                                        <p><i class="material-icons profile-card-i">perm_identity</i> Managing Director</p>
+                                                        <p><i class="material-icons profile-card-i">perm_phone_msg</i> +1 (612) 222 8989</p>
+                                                        <p><i class="material-icons profile-card-i">email</i> abi@domain.com</p>
+                                                    </div>
+                                                    <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                                                        <span class="card-title grey-text text-darken-4">Abishek<i class="material-icons right">close</i>
+                                                        </span>
+                                                        <!-- <p>Here is some more information about this card.</p> -->
+                                                        <p><i class="material-icons">perm_identity</i> Managing Director</p>
+                                                        <p><i class="material-icons">perm_phone_msg</i> +1 (612) 222 8989</p>
+                                                        <p><i class="material-icons">email</i> abi@domain.com</p>
+                                                        <p><i class="material-icons">cake</i> 18th June 1990</p>
+                                                        <p></p>
+                                                        <p><i class="material-icons">airplanemode_active</i> BAR - AUS</p>
+                                                        <p></p>
+                                                        <a class="waves-effect waves-light btn gradient-45deg-deep-orange-orange border-round knowmorebtn z-depth-4" href="user-profile-page.html">Know More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col s12 m6 l4 card-width animated fadeInDown">
+                                                <div id="profile-card" class="card" style="overflow: hidden;">
+                                                    <div class="card-image waves-effect waves-block waves-light gradient-45deg-deep-orange-orange gradient-shadow min-height-100 white-text">
+                                                    </div>
+                                                    <div class="card-content">
+                                                        <img src="images/avatar/avatar-2.png" alt="" class="circle responsive-img activator card-profile-image cyan lighten-1 padding-2">
+                                                        <a class="btn-floating activator btn-move-up waves-effect waves-light red accent-2 z-depth-4 right">
+                                                            <i class="material-icons">edit</i>
+                                                        </a>
+                                                        <h5 class="mt-4 card-title activator grey-text text-darken-4">Arun</h5>
+                                                        <p><i class="material-icons profile-card-i">perm_identity</i>Manager</p>
+                                                        <p><i class="material-icons profile-card-i">perm_phone_msg</i> +1 (612) 222 8989</p>
+                                                        <p><i class="material-icons profile-card-i">email</i> arun123@domain.com</p>
+                                                    </div>
+                                                    <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                                                        <span class="card-title grey-text text-darken-4">Arun<i class="material-icons right">close</i>
+                                                        </span>
+                                                        <!-- <p>Here is some more information about this card.</p> -->
+                                                        <p><i class="material-icons">perm_identity</i>Manager</p>
+                                                        <p><i class="material-icons">perm_phone_msg</i> +1 (612) 222 8989</p>
+                                                        <p><i class="material-icons">email</i> arun123@domain.com</p>
+                                                        <p><i class="material-icons">cake</i> 18th June 1990</p>
+                                                        <p></p>
+                                                        <p><i class="material-icons">airplanemode_active</i> BAR - AUS</p>
+                                                        <p></p>
+                                                        <a class="waves-effect waves-light btn gradient-45deg-deep-orange-orange border-round knowmorebtn z-depth-4" >Know More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col s12 m6 l4 card-width animated fadeInDown">
+                                                <div id="profile-card" class="card" style="overflow: hidden;">
+                                                    <div class="card-image waves-effect waves-block waves-light gradient-45deg-indigo-purple gradient-shadow min-height-100 white-text">
+                                                    </div>
+                                                    <div class="card-content">
+                                                        <img src="images/avatar/avatar-3.png" alt="" class="circle responsive-img activator card-profile-image cyan lighten-1 padding-2">
+                                                        <a class="btn-floating activator btn-move-up waves-effect waves-light red accent-2 z-depth-4 right">
+                                                            <i class="material-icons">edit</i>
+                                                        </a>
+                                                        <h5 class="mt-4 card-title activator grey-text text-darken-4">Ananth</h5>
+                                                        <p><i class="material-icons profile-card-i">perm_identity</i> Admin</p>
+                                                        <p><i class="material-icons profile-card-i">perm_phone_msg</i> +1 (612) 222 8989</p>
+                                                        <p><i class="material-icons profile-card-i">email</i> ananth87@domain.com</p>
+                                                    </div>
+                                                    <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                                                        <span class="card-title grey-text text-darken-4">Ananth<i class="material-icons right">close</i>
+                                                        </span>
+                                                        <!-- <p>Here is some more information about this card.</p> -->
+                                                        <p><i class="material-icons">perm_identity</i> Admin</p>
+                                                        <p><i class="material-icons">perm_phone_msg</i> +1 (612) 222 8989</p>
+                                                        <p><i class="material-icons">email</i> ananth87@domain.com</p>
+                                                        <p><i class="material-icons">cake</i> 18th June 1990</p>
+                                                        <p></p>
+                                                        <p><i class="material-icons">airplanemode_active</i> BAR - AUS</p>
+                                                        <p></p>
+                                                        <a class="waves-effect waves-light btn gradient-45deg-deep-orange-orange border-round knowmorebtn z-depth-4">Know More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col s12 m6 l4 card-width animated fadeInDown">
+                                                <div id="profile-card" class="card" style="overflow: hidden;">
+                                                    <div class="card-image waves-effect waves-block waves-light gradient-45deg-green-teal gradient-shadow min-height-100 white-text">
+                                                    </div>
+                                                    <div class="card-content">
+                                                        <img src="images/avatar/avatar-4.png" alt="" class="circle responsive-img activator card-profile-image cyan lighten-1 padding-2">
+                                                        <a class="btn-floating activator btn-move-up waves-effect waves-light red accent-2 z-depth-4 right">
+                                                            <i class="material-icons">edit</i>
+                                                        </a>
+                                                        <h5 class="mt-4 card-title activator grey-text text-darken-4">Ajith</h5>
+                                                        <p><i class="material-icons profile-card-i">perm_identity</i> Sales</p>
+                                                        <p><i class="material-icons profile-card-i">perm_phone_msg</i> +1 (612) 222 8989</p>
+                                                        <p><i class="material-icons profile-card-i">email</i> ajith33@domain.com</p>
+                                                    </div>
+                                                    <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                                                        <span class="card-title grey-text text-darken-4">Ajith<i class="material-icons right">close</i>
+                                                        </span>
+                                                        <!-- <p>Here is some more information about this card.</p> -->
+                                                        <p><i class="material-icons">perm_identity</i> Sales</p>
+                                                        <p><i class="material-icons">perm_phone_msg</i> +1 (612) 222 8989</p>
+                                                        <p><i class="material-icons">email</i> ajith33@domain.com</p>
+                                                        <p><i class="material-icons">cake</i> 18th June 1990</p>
+                                                        <p></p>
+                                                        <p><i class="material-icons">airplanemode_active</i> BAR - AUS</p>
+                                                        <p></p>
+                                                        <a class="waves-effect waves-light btn gradient-45deg-deep-orange-orange border-round knowmorebtn z-depth-4">Know More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col s12 m6 l4 card-width animated fadeInDown">
+                                                <div id="profile-card" class="card" style="overflow: hidden;">
+                                                    <div class="card-image waves-effect waves-block waves-light gradient-45deg-amber-amber gradient-shadow min-height-100 white-text">
+                                                    </div>
+                                                    <div class="card-content">
+                                                        <img src="images/avatar/avatar-5.png" alt="" class="circle responsive-img activator card-profile-image cyan lighten-1 padding-2">
+                                                        <a class="btn-floating activator btn-move-up waves-effect waves-light red accent-2 z-depth-4 right">
+                                                            <i class="material-icons">edit</i>
+                                                        </a>
+                                                        <h5 class="mt-4 card-title activator grey-text text-darken-4">Frango</h5>
+                                                        <p><i class="material-icons profile-card-i">perm_identity</i> Opration</p>
+                                                        <p><i class="material-icons profile-card-i">perm_phone_msg</i> +1 (612) 222 8989</p>
+                                                        <p><i class="material-icons profile-card-i">email</i> frango90@domain.com</p>
+                                                    </div>
+                                                    <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                                                        <span class="card-title grey-text text-darken-4">Frango<i class="material-icons right">close</i>
+                                                        </span>
+                                                        <!-- <p>Here is some more information about this card.</p> -->
+                                                        <p><i class="material-icons">perm_identity</i> Opration</p>
+                                                        <p><i class="material-icons">perm_phone_msg</i> +1 (612) 222 8989</p>
+                                                        <p><i class="material-icons">email</i> frango90@domain.com</p>
+                                                        <p><i class="material-icons">cake</i> 18th June 1990</p>
+                                                        <p></p>
+                                                        <p><i class="material-icons">airplanemode_active</i> BAR - AUS</p>
+                                                        <p></p>
+                                                        <a class="waves-effect waves-light btn gradient-45deg-deep-orange-orange border-round knowmorebtn z-depth-4">Know More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col s12 m6 l4 card-width animated fadeInDown">
+                                                <div id="profile-card" class="card" style="overflow: hidden;">
+                                                    <div class="card-image waves-effect waves-block waves-light gradient-45deg-red-pink gradient-shadow min-height-100 white-text">
+                                                    </div>
+                                                    <div class="card-content">
+                                                        <img src="images/avatar/avatar-6.png" alt="" class="circle responsive-img activator card-profile-image cyan lighten-1 padding-2">
+                                                        <a class="btn-floating activator btn-move-up waves-effect waves-light red accent-2 z-depth-4 right">
+                                                            <i class="material-icons">edit</i>
+                                                        </a>
+                                                        <h5 class="mt-4 card-title activator grey-text text-darken-4">Joseph</h5>
+                                                        <p><i class="material-icons profile-card-i">perm_identity</i> Accountant</p>
+                                                        <p><i class="material-icons profile-card-i">perm_phone_msg</i> +1 (612) 222 8989</p>
+                                                        <p><i class="material-icons profile-card-i">email</i> jose45@domain.com</p>
+                                                    </div>
+                                                    <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                                                        <span class="card-title grey-text text-darken-4">Joseph<i class="material-icons right">close</i>
+                                                        </span>
+                                                        <!-- <p>Here is some more information about this card.</p> -->
+                                                        <p><i class="material-icons">perm_identity</i> Accountant</p>
+                                                        <p><i class="material-icons">perm_phone_msg</i> +1 (612) 222 8989</p>
+                                                        <p><i class="material-icons">email</i> jose45@domain.com</p>
+                                                        <p><i class="material-icons">cake</i> 18th June 1990</p>
+                                                        <p></p>
+                                                        <p><i class="material-icons">airplanemode_active</i> BAR - AUS</p>
+                                                        <p></p>
+                                                        <a class="waves-effect waves-light btn gradient-45deg-deep-orange-orange border-round knowmorebtn z-depth-4">Know More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col s12 m6 l4 card-width animated fadeInDown">
+                                                <div id="profile-card" class="card" style="overflow: hidden;">
+                                                    <div class="card-image waves-effect waves-block waves-light gradient-45deg-light-blue-cyan gradient-shadow min-height-100 white-text">
+                                                    </div>
+                                                    <div class="card-content">
+                                                        <img src="images/avatar/avatar-7.png" alt="" class="circle responsive-img activator card-profile-image cyan lighten-1 padding-2">
+                                                        <a class="btn-floating activator btn-move-up waves-effect waves-light red accent-2 z-depth-4 right">
+                                                            <i class="material-icons">edit</i>
+                                                        </a>
+                                                        <h5 class="mt-4 card-title activator grey-text text-darken-4">Affrin</h5>
+                                                        <p><i class="material-icons profile-card-i">perm_identity</i> Supervisor</p>
+                                                        <p><i class="material-icons profile-card-i">perm_phone_msg</i> +1 (612) 222 8989</p>
+                                                        <p><i class="material-icons profile-card-i">email</i> afrin21@domain.com</p>
+                                                    </div>
+                                                    <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                                                        <span class="card-title grey-text text-darken-4">Affrin<i class="material-icons right">close</i>
+                                                        </span>
+                                                        <!-- <p>Here is some more information about this card.</p> -->
+                                                        <p><i class="material-icons">perm_identity</i> Supervisor</p>
+                                                        <p><i class="material-icons">perm_phone_msg</i> +1 (612) 222 8989</p>
+                                                        <p><i class="material-icons">email</i> afrin21@domain.com</p>
+                                                        <p><i class="material-icons">cake</i> 18th June 1990</p>
+                                                        <p></p>
+                                                        <p><i class="material-icons">airplanemode_active</i> BAR - AUS</p>
+                                                        <p></p>
+                                                        <a class="waves-effect waves-light btn gradient-45deg-deep-orange-orange border-round knowmorebtn z-depth-4">Know More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="bottom: 50px; right: 19px;" class="fixed-action-btn direction-top">
+                            <a class="btn-floating btn-large gradient-45deg-light-blue-cyan gradient-shadow"><i class="material-icons">add</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: Page Main-->
+        <!-- BEGIN: Footer-->
+        <footer class="page-footer footer footer-static footer-dark gradient-45deg-light-blue-cyan gradient-shadow navbar-border navbar-shadow">
+            <div class="footer-copyright">
+                <div class="container"><span>&copy; 2019 <a href="http://themeforest.net/user/pixinvent/portfolio?ref=pixinvent" target="_blank">Ecube</a> All rights reserved.</span><span class="right hide-on-small-only">Designed and Developed by <a href="https://cruzbytes.com/">CRUZBYTES</a></span></div>
+            </div>
+        </footer>
+        <!-- END: Footer-->
+        <!-- BEGIN VENDOR JS-->
+        <script src="js/vendors.min.js" type="text/javascript"></script>
+        <!-- BEGIN VENDOR JS-->
+        <!-- BEGIN PAGE VENDOR JS-->
+        <script src="vendors/chartist-js/chartist.min.js" type="text/javascript"></script>
+        <script src="vendors/chartjs/chart.min.js" type="text/javascript"></script>
+        <script src="fonts/fontawesome/js/all.min.js" type="text/javascript"></script>
+        <!-- END PAGE VENDOR JS-->
+        <!-- BEGIN THEME  JS-->
+        <script src="js/plugins.js" type="text/javascript"></script>
+        <script src="js/custom/custom-script.js" type="text/javascript"></script>
+        <!-- END THEME  JS-->
+        <!-- BEGIN PAGE LEVEL JS-->
+        <script src="js/scripts/cards-extended.js" type="text/javascript"></script>
+        <script src="js/custom/custom-script.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL JS-->
+</body>
+
+</html>
